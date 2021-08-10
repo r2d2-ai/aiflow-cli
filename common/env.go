@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/r2d2-ai/ai-box-cli/util"
+	"github.com/r2d2-ai/AIflow-cli/util"
 )
 
 var verbose = false

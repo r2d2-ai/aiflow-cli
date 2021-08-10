@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/r2d2-ai/ai-box-cli/api"
+	"github.com/r2d2-ai/AIflow-cli/api"
 	"github.com/spf13/cobra"
 )
 

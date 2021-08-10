@@ -17,9 +17,9 @@ var jsonString = `{
   "description": "My AIflow application description",
   "appModel": "1.0.0",
   "imports": [
-    "github.com/r2d2-ai/ai-box/common/activity/log",
-    "github.com/r2d2-ai/ai-box/common/trigger/rest",
-    "github.com/r2d2-ai/ai-box/flow"
+    "github.com/r2d2-ai/AIflow:/common/activity/log",
+    "github.com/r2d2-ai/AIflow:/common/trigger/rest",
+    "github.com/r2d2-ai/AIflow:/flow"
   ],
   "triggers": [
     {
