@@ -12,7 +12,7 @@ import (
 	"github.com/r2d2-ai/aiflow-cli/util"
 )
 
-var fileSampleEngineMain = filepath.Join("examples", "engine", "main.go")
+var fileSampleEngineMain = filepath.Join("core", "examples", "engine", "main.go")
 
 func CreateProject(basePath, appName, appCfgPath, coreVersion string) (common.AppProject, error) {
 
