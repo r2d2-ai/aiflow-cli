@@ -1,0 +1,78 @@
+{
+  "name": "SampleApp",
+  "type": "AIflow:app",
+  "version": "0.0.1",
+  "appModel": "1.0.0",
+  "description": "",
+  "imports": [
+    "github.com/r2d2-ai/ai-box/contrib/activity/log",
+    "github.com/r2d2-ai/ai-box/contrib/trigger/rest",
+    "github.com/r2d2-ai/ai-box/flow"
+  ],
+  "triggers": [
+    {
+      "id": "receive_http_message",
+      "ref": "#rest",
+      "name": "Receive HTTP Message",
+      "description": "Simple REST Trigger",
+      "settings": {
+        "port": 8080
+      },
+      "handlers": [
+        {
+          "settings": {
+            "method": "GET",
+            "path": "/test"
+          },
+          "action": {
+            "ref": "#flow",
+            "settings": {
+              "flowURI": "res://flow:get_name"
+            },
+            "input": {
+            },
+            "output": {
+              "code": 200
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "flow:get_name",
+      "data": {
+        "name": "GetName",
+        "metadata": {
+          "input": [
+            {
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "output": [
+            {
+              "name": "greeting",
+              "type": "string"
+            }
+          ]
+        },
+        "tasks": [
+          {
+            "id": "log_2",
+            "name": "Log",
+            "description": "Logs a message",
+            "activity": {
+              "ref": "#log",
+              "input": {
+                "message": "Hello from AIflow",
+                "addDetails": false
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
