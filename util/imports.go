@@ -11,10 +11,10 @@ import (
 these imports are stored in AIflow.json in the "imports" array, for instance:
 
  "imports": [
-   "github.com/r2d2-ai/ai-box/contrib@v1.0.0:/activity/log",
-   "github.com/r2d2-ai/ai-box/contrib/activity/rest@v1.0.0"
-   "rest_activity github.com/r2d2-ai/ai-box/contrib@v1.0.0:/activity/rest",
-   "rest_trigger github.com/r2d2-ai/ai-box/contrib:/trigger/rest",
+   "github.com/r2d2-ai/ai-box/common@v1.0.0:/activity/log",
+   "github.com/r2d2-ai/ai-box/common/activity/rest@v1.0.0"
+   "rest_activity github.com/r2d2-ai/ai-box/common@v1.0.0:/activity/rest",
+   "rest_trigger github.com/r2d2-ai/ai-box/common:/trigger/rest",
    "github.com/r2d2-ai/ai-box/flow"
  ]
 
