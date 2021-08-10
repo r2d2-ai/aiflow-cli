@@ -5,9 +5,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/r2d2-ai/ai-box/cli/api"
-	"github.com/r2d2-ai/ai-box/cli/common"
-	"github.com/r2d2-ai/ai-box/cli/util"
+	"github.com/r2d2-ai/ai-box-cli/api"
+	"github.com/r2d2-ai/ai-box-cli/common"
+	"github.com/r2d2-ai/ai-box-cli/util"
 	"github.com/spf13/cobra"
 )
 

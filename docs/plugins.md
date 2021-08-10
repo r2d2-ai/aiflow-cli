@@ -33,7 +33,7 @@ package myplugin
 
 import (
 	"fmt"
-	"github.com/r2d2-ai/ai-box/cli/common" // AIflow CLI support code
+	"github.com/r2d2-ai/ai-box-cli/common" // AIflow CLI support code
 	"github.com/spf13/cobra"
 )
 

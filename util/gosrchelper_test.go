@@ -19,7 +19,7 @@ func TestFindGoModPackageSrc(t *testing.T) {
 }
 
 func TestFindOldPackageSrc(t *testing.T) {
-	str, ver, err := FindOldPackageSrc("github.com/r2d2-ai/ai-box/cli")
+	str, ver, err := FindOldPackageSrc("github.com/r2d2-ai/ai-box-cli")
 	if err != nil {
 		fmt.Println("err:", err)
 		t.FailNow()

@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/r2d2-ai/ai-box/cli/common"
+	"github.com/r2d2-ai/ai-box-cli/common"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,6 +1,6 @@
 package common
 
-import "github.com/r2d2-ai/ai-box/cli/util"
+import "github.com/r2d2-ai/ai-box-cli/util"
 
 type AppProject interface {
 	Validate() error
