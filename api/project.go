@@ -10,12 +10,12 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow-cli/common"
-	"github.com/r2d2-ai/AIflow-cli/util"
+	"github.com/r2d2-ai/aiflow-cli/common"
+	"github.com/r2d2-ai/aiflow-cli/util"
 )
 
 const (
-	AIflowCoreRepo = "github.com/r2d2-ai/AIflow"
+	AIflowCoreRepo = "github.com/r2d2-ai/aiflow"
 	fileAIflowJson = "AIflow.json"
 	fileEngineJson = "engine.json"
 	fileMainGo     = "main.go"

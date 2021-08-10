@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow-cli/api"
-	"github.com/r2d2-ai/AIflow-cli/common"
+	"github.com/r2d2-ai/aiflow-cli/api"
+	"github.com/r2d2-ai/aiflow-cli/common"
 	"github.com/spf13/cobra"
 )
 

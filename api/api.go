@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/r2d2-ai/AIflow-cli/util"
+	"github.com/r2d2-ai/aiflow-cli/util"
 )
 
 var verbose = false

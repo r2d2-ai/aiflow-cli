@@ -12,7 +12,7 @@ import (
 )
 
 const (
-	cliPackage = "github.com/r2d2-ai/AIflow-cli"
+	cliPackage = "github.com/r2d2-ai/aiflow-cli"
 )
 
 func GetCLIInfo() (string, string, error) {

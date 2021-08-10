@@ -126,7 +126,7 @@ Flags:
 Install the basic REST trigger:
 
 ```bash
-$ AIflow install github.com/r2d2-ai/AIflow/contrib/trigger/rest
+$ AIflow install github.com/r2d2-ai/aiflow/contrib/trigger/rest
 ```
 Install a contribution that you are currently developing on your computer:
 
@@ -219,11 +219,11 @@ Usage:
 Update you log activity to master:
 
 ```bash
-$ AIflow update github.com/r2d2-ai/AIflow/contrib/activity/log@master
+$ AIflow update github.com/r2d2-ai/aiflow/contrib/activity/log@master
 ```
 
 Update your AIflow core library to latest master:
 
 ```bash
-$ AIflow update github.com/r2d2-ai/AIflow/core@master
+$ AIflow update github.com/r2d2-ai/aiflow/core@master
 ```

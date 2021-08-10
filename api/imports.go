@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/r2d2-ai/AIflow-cli/common"
-	"github.com/r2d2-ai/AIflow-cli/util"
-	"github.com/r2d2-ai/AIflow/core/app"
+	"github.com/r2d2-ai/aiflow-cli/common"
+	"github.com/r2d2-ai/aiflow-cli/util"
+	"github.com/r2d2-ai/aiflow/core/app"
 )
 
 func ListProjectImports(project common.AppProject) error {

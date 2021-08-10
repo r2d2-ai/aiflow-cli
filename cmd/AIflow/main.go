@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/r2d2-ai/AIflow-cli/commands"
-	"github.com/r2d2-ai/AIflow-cli/util"
+	"github.com/r2d2-ai/aiflow-cli/commands"
+	"github.com/r2d2-ai/aiflow-cli/util"
 )
 
 // Not set by default, will be filled by init() function in "./currentversion.go" file, if it exists.

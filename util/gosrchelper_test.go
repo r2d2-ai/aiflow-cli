@@ -8,7 +8,7 @@ import (
 )
 
 func TestFindGoModPackageSrc(t *testing.T) {
-	str, ver, err := FindGoModPackageSrc("github.com/r2d2-ai/AIflow/core", "", true)
+	str, ver, err := FindGoModPackageSrc("github.com/r2d2-ai/aiflow/core", "", true)
 	if err != nil {
 		fmt.Println("err:", err)
 		t.FailNow()
@@ -19,7 +19,7 @@ func TestFindGoModPackageSrc(t *testing.T) {
 }
 
 func TestFindOldPackageSrc(t *testing.T) {
-	str, ver, err := FindOldPackageSrc("github.com/r2d2-ai/AIflow-cli")
+	str, ver, err := FindOldPackageSrc("github.com/r2d2-ai/aiflow-cli")
 	if err != nil {
 		fmt.Println("err:", err)
 		t.FailNow()
