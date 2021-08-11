@@ -15,7 +15,7 @@ these imports are stored in AIflow.json in the "imports" array, for instance:
    "github.com/r2d2-ai/aiflow/common/activity/rest@v1.0.0"
    "rest_activity github.com/r2d2-ai/aiflow/common@v1.0.0:/activity/rest",
    "rest_trigger github.com/r2d2-ai/aiflow/common:/trigger/rest",
-   "github.com/r2d2-ai/aiflow/flow"
+   "github.com/r2d2-ai/aiflow/action/flow"
  ]
 
 */

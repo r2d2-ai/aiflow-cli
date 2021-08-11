@@ -16,20 +16,20 @@ var newJsonString = `{
 	"description": "My AIflow application description",
 	"appModel": "1.0.0",
 	"imports": [
-	  "github.com/r2d2-ai/aiflow/flow",
-	  "github.com/r2d2-ai/aiflow/common/trigger/rest",
-	  "github.com/r2d2-ai/aiflow/common/activity/actreturn",
-	  "github.com/r2d2-ai/aiflow/common/activity/log",
-	  "github.com/r2d2-ai/aiflow/common/activity/rest"
+	  "github.com/r2d2-ai/aiflow/action/flow",
+	  "github.com/r2d2-ai/aiflow/trigger/net/rest",
+	  "github.com/r2d2-ai/aiflow/activity/common/actreturn",
+	  "github.com/r2d2-ai/aiflow/activity/common/log",
+	  "github.com/r2d2-ai/aiflow/activity/net/rest"
 	],
 	"triggers": [
 	  {
 		"id": "my_rest_trigger",
-		"ref":  "github.com/r2d2-ai/aiflow/common/trigger/rest",
+		"ref":  "#rest",
 		"handlers": [
 		  {
 			"action": {
-			  "ref": "github.com/r2d2-ai/aiflow/flow",
+			  "ref": "#flow",
 			  "settings": {
 				"flowURI": "res://flow:simple_flow"
 			  },
@@ -62,7 +62,7 @@ var newJsonString = `{
 			  "id": "log",
 			  "name": "Log Message",
 			  "activity": {
-				"ref": "github.com/r2d2-ai/aiflow/common/activity/log",
+				"ref": "#log",
 				"input": {
 				  "message": "=$flow.in",
 				  "flowInfo": "false",
@@ -74,7 +74,7 @@ var newJsonString = `{
 				"id" :"return",
 				"name" : "Activity Return",
 				"activity":{
-					"ref" : "github.com/r2d2-ai/aiflow/common/activity/actreturn",
+					"ref" : "#actreturn",
 					"settings":{
 						"mappings":{
 							"out": "nameA"
@@ -107,11 +107,11 @@ func TestInstallLegacyPkg(t *testing.T) {
 	t.Logf("Current dir '%s'", testEnv.currentDir)
 	_ = os.Chdir(testEnv.currentDir)
 
-	_, err := CreateProject(testEnv.currentDir, "myApp", "", "v0.9.2")
+	_, err := CreateProject(testEnv.currentDir, "myApp", "", "v0.1.0")
 
 	assert.Nil(t, err)
 
-	err = InstallPackage(NewAppProject(filepath.Join(testEnv.currentDir, "myApp")), "github.com/r2d2-ai/aiflow/common/activity/log")
+	err = InstallPackage(NewAppProject(filepath.Join(testEnv.currentDir, "myApp")), "github.com/r2d2-ai/aiflow/activity/common/log")
 	assert.Nil(t, err)
 
 	appProject := NewAppProject(filepath.Join(testEnv.currentDir, "myApp"))
@@ -142,7 +142,7 @@ func TestInstallPkg(t *testing.T) {
 
 	assert.Nil(t, err)
 
-	err = InstallPackage(NewAppProject(filepath.Join(testEnv.currentDir, "myApp")), "github.com/r2d2-ai/aiflow/common/activity/noop")
+	err = InstallPackage(NewAppProject(filepath.Join(testEnv.currentDir, "myApp")), "github.com/r2d2-ai/aiflow/activity/common/noop")
 	assert.Nil(t, err)
 
 	appProject := NewAppProject(filepath.Join(testEnv.currentDir, "myApp"))
@@ -172,7 +172,7 @@ func TestInstallPkgWithVersion(t *testing.T) {
 
 	assert.Nil(t, err)
 
-	err = InstallPackage(NewAppProject(filepath.Join(testEnv.currentDir, "myApp")), "github.com/r2d2-ai/aiflow/common/activity/log")
+	err = InstallPackage(NewAppProject(filepath.Join(testEnv.currentDir, "myApp")), "github.com/r2d2-ai/aiflow/activity/common/log")
 	assert.Nil(t, err)
 
 	appProject := NewAppProject(filepath.Join(testEnv.currentDir, "myApp"))
