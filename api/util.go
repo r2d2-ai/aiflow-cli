@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 
 	"github.com/r2d2-ai/aiflow-cli/common"
-	"github.com/r2d2-ai/aiflow/core/app"
+	"github.com/r2d2-ai/aiflow/app"
 )
 
 func readAppDescriptor(project common.AppProject) (*app.Config, error) {

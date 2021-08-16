@@ -8,7 +8,7 @@ import (
 
 	"github.com/r2d2-ai/aiflow-cli/common"
 	"github.com/r2d2-ai/aiflow-cli/util"
-	"github.com/r2d2-ai/aiflow/core/app"
+	"github.com/r2d2-ai/aiflow/app"
 )
 
 func ListProjectImports(project common.AppProject) error {

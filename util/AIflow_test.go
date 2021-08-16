@@ -7,7 +7,7 @@ import (
 )
 
 func TestName(t *testing.T) {
-	line := `              "ref":"github.com/r2d2-ai/aiflow/common/activity/log",`
+	line := `              "ref":"github.com/r2d2-ai/aiflow/activity/common/log",`
 
 	if idx := strings.Index(line, "\"ref\""); idx > -1 {
 
